@@ -1,6 +1,5 @@
 +++
 date = '2026-02-09T00:17:43-05:00'
-draft = true
 title = 'How to write resume'
 +++
 
