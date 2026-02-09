@@ -11,33 +11,28 @@ theme = "PaperMod"
 
 [[menu.main]]
   name = "Tech"
-  url = "/categories/tech/"
+  url = "/tech/"
   weight = 2
 
 [[menu.main]]
   name = "Career"
-  url = "/categories/career/"
+  url = "/career/"
   weight = 3
 
 [[menu.main]]
   name = "AI"
-  url = "/categories/ai/"
+  url = "/ai/"
   weight = 4
 
 [[menu.main]]
   name = "Books"
-  url = "/categories/books/"
+  url = "/books/"
   weight = 5
 
 [[menu.main]]
   name = "Money"
-  url = "/categories/money/"
+  url = "/money/"
   weight = 6
-
-[[menu.main]]
-  name = "Archives"
-  url = "/archives/"
-  weight = 7
 
 [params]
   description = "Tech | Career | AI | Books | Money"
@@ -45,6 +40,7 @@ theme = "PaperMod"
   author = "Renren Zhang"
   ShowReadingTime = true
   ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
   defaultTheme = "auto"
 
 [outputs]
