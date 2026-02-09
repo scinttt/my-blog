@@ -1,0 +1,9 @@
+baseURL = 'https://github.com/scinttt/my-blog.git'
+languageCode = 'en'
+title = 'Renren Zhang'
+theme = 'PaperMod'
+
+[params]
+    defaultTheme = "auto" # 跟随系统深色模式
+    ShowReadingTime = true # 显示阅读时间
+    ShowShareButtons = false # 纯净阅读，关掉分享按钮
