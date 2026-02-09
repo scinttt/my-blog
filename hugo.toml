@@ -3,8 +3,9 @@ languageCode = "zh-cn"
 title = "Renren Zhang"
 theme = "PaperMod"
 
-# 分页设置
-paginate = 10
+# 新版分页设置
+[pagination]
+  pagerSize = 10
 
 # 启用 emoji
 enableEmoji = true
@@ -40,32 +41,18 @@ enableEmoji = true
 
 # PaperMod 主题参数
 [params]
-  # 网站描述
   description = "Renren Zhang's Personal Blog"
   author = "Renren Zhang"
   
-  # 显示阅读时间
   ShowReadingTime = true
-  
-  # 显示分享按钮
   ShowShareButtons = true
-  
-  # 显示文章目录
   ShowToc = true
-  
-  # 显示代码复制按钮
   ShowCodeCopyButtons = true
-  
-  # 显示面包屑导航
   ShowBreadCrumbs = true
-  
-  # 显示文章更新时间
   ShowPostNavLinks = true
   
-  # 默认主题模式 (auto, light, dark)
   defaultTheme = "auto"
   
-  # 启用搜索
   [params.fuseOpts]
     isCaseSensitive = false
     shouldSort = true
@@ -75,21 +62,19 @@ enableEmoji = true
     minMatchCharLength = 0
     keys = ["title", "permalink", "summary", "content"]
 
-  # 首页信息
   [params.homeInfoParams]
     Title = "👋 欢迎来到我的博客"
     Content = "分享技术、思考与生活"
 
-  # 社交链接
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/yourusername"  # 改成你的 GitHub
+    url = "https://github.com/yourusername"
 
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:your@email.com"  # 改成你的邮箱
+    url = "mailto:your@email.com"
 
-# 输出格式（启用搜索需要）
+# 输出格式
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
