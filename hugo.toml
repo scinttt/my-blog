@@ -41,6 +41,7 @@ theme = "PaperMod"
 
 [params]
   description = "Tech | Career | AI | Books | Money"
+  mainSections = ["ai", "books", "tech", "money", "career"]
   author = "Renren Zhang"
   ShowReadingTime = true
   ShowCodeCopyButtons = true
