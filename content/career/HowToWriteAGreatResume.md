@@ -1,7 +1,7 @@
 +++
 date = '2026-02-09T00:17:43-05:00'
 title = 'How to write resume'
-categories: ["career"]
+categories: ["Career"]
 tags: ["resume", "career"]
 +++
 
