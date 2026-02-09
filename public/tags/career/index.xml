@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Renren Zhang</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Renren Zhang</description>
+    <title>Career on Renren Zhang</title>
+    <link>http://localhost:1313/tags/career/</link>
+    <description>Recent content in Career on Renren Zhang</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Feb 2026 12:40:41 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>安娜卡列尼娜中的人物描写</title>
-      <link>http://localhost:1313/books/anna_karenina/human_description/</link>
-      <pubDate>Mon, 09 Feb 2026 12:40:41 -0500</pubDate>
-      <guid>http://localhost:1313/books/anna_karenina/human_description/</guid>
-      <description>&lt;h1 id=&#34;安娜卡列尼娜中的人物描写&#34;&gt;安娜卡列尼娜中的人物描写&lt;/h1&gt;</description>
-    </item>
+    <lastBuildDate>Mon, 09 Feb 2026 00:17:43 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/career/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Write a Great Resume</title>
       <link>http://localhost:1313/career/howtowriteagreatresume/</link>
