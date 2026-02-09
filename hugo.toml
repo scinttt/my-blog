@@ -3,19 +3,51 @@ languageCode = "en"
 title = "Renren Zhang"
 theme = "PaperMod"
 
-[pagination]
-  pagerSize = 10
+# Menu
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
 
-enableEmoji = true
+[[menu.main]]
+  name = "Tech"
+  url = "/categories/tech/"
+  weight = 2
+
+[[menu.main]]
+  name = "Career"
+  url = "/categories/career/"
+  weight = 3
+
+[[menu.main]]
+  name = "AI"
+  url = "/categories/ai/"
+  weight = 4
+
+[[menu.main]]
+  name = "Books"
+  url = "/categories/books/"
+  weight = 5
+
+[[menu.main]]
+  name = "Money"
+  url = "/categories/money/"
+  weight = 6
+
+[[menu.main]]
+  name = "Archives"
+  url = "/archives/"
+  weight = 7
 
 [params]
-  description = "Renren Zhang's Personal Blog"
+  description = "Tech | Career | AI | Books | Money"
   author = "Renren Zhang"
-  
   ShowReadingTime = true
   ShowCodeCopyButtons = true
-  
   defaultTheme = "auto"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [markup]
   [markup.highlight]
