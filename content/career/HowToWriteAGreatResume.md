@@ -1,6 +1,8 @@
 +++
 date = '2026-02-09T00:17:43-05:00'
 title = 'How to write resume'
+categories: ["career"]
+tags: ["resume", "career"]
 +++
 
 # The Art of the Resume: A Strategic Approach to Standing Out
