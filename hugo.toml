@@ -1,9 +1,104 @@
-baseURL = "/"
-languageCode = 'en'
-title = 'Renren Zhang'
-theme = 'PaperMod'
+baseURL = "https://www.creaturelove7.com/"  # 改成你的域名，如 "https://renrenzhang.com/"
+languageCode = "zh-cn"
+title = "Renren Zhang"
+theme = "PaperMod"
 
+# 分页设置
+paginate = 10
+
+# 启用 emoji
+enableEmoji = true
+
+# 构建设置
+[build]
+  writeStats = true
+
+# 菜单配置
+[[menu.main]]
+  identifier = "home"
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 4
+
+# PaperMod 主题参数
 [params]
-    defaultTheme = "auto" # 跟随系统深色模式
-    ShowReadingTime = true # 显示阅读时间
-    ShowShareButtons = false # 纯净阅读，关掉分享按钮
+  # 网站描述
+  description = "Renren Zhang's Personal Blog"
+  author = "Renren Zhang"
+  
+  # 显示阅读时间
+  ShowReadingTime = true
+  
+  # 显示分享按钮
+  ShowShareButtons = true
+  
+  # 显示文章目录
+  ShowToc = true
+  
+  # 显示代码复制按钮
+  ShowCodeCopyButtons = true
+  
+  # 显示面包屑导航
+  ShowBreadCrumbs = true
+  
+  # 显示文章更新时间
+  ShowPostNavLinks = true
+  
+  # 默认主题模式 (auto, light, dark)
+  defaultTheme = "auto"
+  
+  # 启用搜索
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+  # 首页信息
+  [params.homeInfoParams]
+    Title = "👋 欢迎来到我的博客"
+    Content = "分享技术、思考与生活"
+
+  # 社交链接
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/yourusername"  # 改成你的 GitHub
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:your@email.com"  # 改成你的邮箱
+
+# 输出格式（启用搜索需要）
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 代码高亮设置
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    lineNos = true
+    noClasses = false
+    style = "monokai"
