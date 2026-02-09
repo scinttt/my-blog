@@ -6,14 +6,22 @@
     <description>Recent content in Posts on Renren Zhang</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Feb 2026 22:40:57 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 23:36:54 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Your Post Title</title>
+      <link>http://localhost:1313/posts/your-post-title/</link>
+      <pubDate>Sun, 08 Feb 2026 23:36:54 -0500</pubDate>
+      <guid>http://localhost:1313/posts/your-post-title/</guid>
+      <description>&lt;p&gt;This is a testing blog.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hello World</title>
       <link>http://localhost:1313/posts/hello-world/</link>
       <pubDate>Sun, 08 Feb 2026 22:40:57 -0500</pubDate>
       <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description></description>
+      <description>&lt;h1 id=&#34;hello&#34;&gt;Hello&lt;/h1&gt;
+&lt;h2 id=&#34;this-is-my-first-blog-hello-everyone&#34;&gt;This is my first blog. Hello Everyone.&lt;/h2&gt;</description>
     </item>
   </channel>
 </rss>
