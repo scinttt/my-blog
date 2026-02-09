@@ -1,4 +1,4 @@
-baseURL = 'https://www.creaturelove7.com/'
+baseURL = "/"
 languageCode = 'en'
 title = 'Renren Zhang'
 theme = 'PaperMod'
