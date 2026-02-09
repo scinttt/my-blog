@@ -1,89 +1,24 @@
 baseURL = "https://www.creaturelove7.com/"  # 改成你的域名，如 "https://renrenzhang.com/"
-languageCode = "zh-cn"
+languageCode = "en"
 title = "Renren Zhang"
 theme = "PaperMod"
 
-# 新版分页设置
 [pagination]
   pagerSize = 10
 
-# 启用 emoji
 enableEmoji = true
 
-# 构建设置
-[build]
-  writeStats = true
-
-# 菜单配置
-[[menu.main]]
-  identifier = "home"
-  name = "首页"
-  url = "/"
-  weight = 1
-
-[[menu.main]]
-  identifier = "archives"
-  name = "归档"
-  url = "/archives/"
-  weight = 2
-
-[[menu.main]]
-  identifier = "tags"
-  name = "标签"
-  url = "/tags/"
-  weight = 3
-
-[[menu.main]]
-  identifier = "search"
-  name = "搜索"
-  url = "/search/"
-  weight = 4
-
-# PaperMod 主题参数
 [params]
   description = "Renren Zhang's Personal Blog"
   author = "Renren Zhang"
   
   ShowReadingTime = true
-  ShowShareButtons = true
-  ShowToc = true
   ShowCodeCopyButtons = true
-  ShowBreadCrumbs = true
-  ShowPostNavLinks = true
   
   defaultTheme = "auto"
-  
-  [params.fuseOpts]
-    isCaseSensitive = false
-    shouldSort = true
-    location = 0
-    distance = 1000
-    threshold = 0.4
-    minMatchCharLength = 0
-    keys = ["title", "permalink", "summary", "content"]
 
-  [params.homeInfoParams]
-    Title = "👋 欢迎来到我的博客"
-    Content = "分享技术、思考与生活"
-
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/yourusername"
-
-  [[params.socialIcons]]
-    name = "email"
-    url = "mailto:your@email.com"
-
-# 输出格式
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-# 代码高亮设置
 [markup]
   [markup.highlight]
-    anchorLineNos = false
     codeFences = true
-    guessSyntax = false
     lineNos = true
-    noClasses = false
     style = "monokai"
