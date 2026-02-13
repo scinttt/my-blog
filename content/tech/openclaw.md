@@ -1,7 +1,7 @@
 +++
 date = '2026-02-13T03:14:42-05:00'
 title = 'Why This OpenClaw Exploded in a Week'
-tags = ['Tech', 'AI', 'Agent', 'OpenSource']
+tags = ['Tech', 'AI', 'Agent', 'Open Source']
 +++
 
 In early 2026, a "side project" developed by Peter Steinberger underwent two name changes in just a few days (Clawdbot -> Moltbot -> OpenClaw), yet amidst the chaos, it harvested over 150,000 Stars—a speed surpassing even Kubernetes and Linux in their early days.
