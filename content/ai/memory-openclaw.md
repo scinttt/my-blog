@@ -1,6 +1,7 @@
 +++
 date = '2026-02-18T02:03:38-05:00'
 title = 'How to make your agent smart as openclaw'
+tags = ['Tech', 'AI', 'Agent', 'Open Source', 'Memory']
 +++
 *What I learned from OpenClaw's memory architecture and how I built a lightweight version in OpenCode.*
 
