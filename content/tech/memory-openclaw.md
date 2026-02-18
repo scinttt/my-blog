@@ -1,6 +1,6 @@
 +++
 date = '2026-02-18T02:03:38-05:00'
-title = 'Manage agent's memory like openclaw'
+title = 'How to make your agent smart as openclaw'
 +++
 *What I learned from OpenClaw's memory architecture and how I built a lightweight version in OpenCode.*
 
