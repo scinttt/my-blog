@@ -1,6 +1,7 @@
 +++
 date = '2026-02-14T19:36:00-05:00'
 title = 'How I Built an iOS App MVP in 4 Hours: A Blueprint for AI-Driven Development'
+summary = "Outlines a disciplined, four-phase framework for rapidly building a production-ready iOS MVP using an AI assistant, emphasizing rigorous upfront system design, sequenced prompting, and a strict validation loop with atomic Git commits."
 tags = ['Tech', 'IOS', 'Mobile', 'vibe coding']
 +++
 The internet is flooded with claims of "I built an app in 5 minutes with AI." As a software engineer, I know the reality is completely different. Generating a script is easy; architecting a scalable, maintainable iOS app with excellent UX is hard.

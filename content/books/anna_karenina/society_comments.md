@@ -1,6 +1,7 @@
 +++
 date = '2026-02-09T16:04:46-05:00'
 title = '安娜卡列尼娜中的社会评论'
+summary = "A focused look at the social commentary within 'Anna Karenina,' analyzing a key passage on the shifting landscape of 19th-century marriage customs and the inherent conflict between tradition and emerging modernity."
 categories = ["Books"]
 tags = ['安娜卡列尼娜', '社会评论']
 +++

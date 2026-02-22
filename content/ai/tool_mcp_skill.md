@@ -1,6 +1,7 @@
 +++
 date = '2026-02-20T02:13:42-05:00'
 title = 'Tools vs. Skills vs. MCP'
+summary = "Clarifies the distinction between Tools (primitive functions), Skills (complex workflows), and the Model Context Protocol (MCP) in agentic AI, providing an architectural framework for developers to choose the right abstraction for their use case."
 tags = ['Tech', 'AI', 'Agent', 'Skill', 'Tool', 'MCP']
 +++
 As we transition from passive chatbots to proactive AI Agents, the conversation has shifted from *what an AI knows* to *what an AI can do*. To interact with the external world, LLMs need mechanisms to fetch data and execute actions.

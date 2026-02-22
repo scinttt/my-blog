@@ -1,6 +1,7 @@
 +++
 date = '2026-02-11T12:18:42-05:00'
 title = 'The Ultimate Guide to Starting Open Source in the AI Era'
+summary = "A strategic guide for developers on how to start contributing to open source, from finding the right project and understanding contribution guidelines to making impactful first contributions and leveraging AI tools."
 categories = ["Career"]
 tags = ['Career', 'Open Source']
 +++

@@ -1,6 +1,7 @@
 +++
 date = '2026-02-20T20:38:45-05:00'
 title = 'Stop Treating Your AI Like a Chatbot: The 4 MCP Tools That Gave My Agent a Brain'
+summary = "Explores the limitations of using LLMs as simple chatbots and introduces the Model-Context-Protocol (MCP), detailing four essential tools that provide context, planning, and memory to transform AI into a powerful, autonomous engineering partner."
 tags = ['AI', 'MCP', 'Engineering', 'Productivity', 'Open Source']
 +++
 

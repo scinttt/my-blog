@@ -1,6 +1,7 @@
 +++
 date = '2026-02-09T00:17:43-05:00'
 title = "How to Write a Great Resume"
+summary = "Elevate your resume with this strategic guide, focusing on crafting a powerful three-sentence summary, showcasing impact-driven achievements in your work experience, and curating a precise skill set to capture recruiters' attention and secure interviews."
 categories = ["Career"]
 tags = ["resume", "career"]
 +++
