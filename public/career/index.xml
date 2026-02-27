@@ -2,30 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Careers on Renren Zhang</title>
-    <link>http://localhost:1313/career/</link>
+    <link>http://localhost:1314/career/</link>
     <description>Recent content in Careers on Renren Zhang</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 11 Feb 2026 12:18:42 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/career/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/career/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Ultimate Guide to Starting Open Source in the AI Era</title>
-      <link>http://localhost:1313/career/start_opensource/</link>
+      <link>http://localhost:1314/career/start_opensource/</link>
       <pubDate>Wed, 11 Feb 2026 12:18:42 -0500</pubDate>
-      <guid>http://localhost:1313/career/start_opensource/</guid>
-      <description>&lt;p&gt;Contributing to open source is one of the most effective ways to accelerate your engineering career. It proves you can navigate large codebases, collaborate with distributed teams, and communicate complex ideas.&lt;/p&gt;
-&lt;p&gt;However, the barrier to entry often feels high. Where do you start? How do you avoid looking like a novice?&lt;/p&gt;
-&lt;h2 id=&#34;phase-1-the-strategic-hunt&#34;&gt;Phase 1: The Strategic Hunt&lt;/h2&gt;
-&lt;p&gt;Many beginners make the mistake of picking a random popular project (like React or Linux) and getting overwhelmed. A better strategy is &lt;strong&gt;relevance&lt;/strong&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1314/career/start_opensource/</guid>
+      <description>A strategic guide for developers on how to start contributing to open source, from finding the right project and understanding contribution guidelines to making impactful first contributions and leveraging AI tools.</description>
     </item>
     <item>
       <title>How to Write a Great Resume</title>
-      <link>http://localhost:1313/career/howtowriteagreatresume/</link>
+      <link>http://localhost:1314/career/howtowriteagreatresume/</link>
       <pubDate>Mon, 09 Feb 2026 00:17:43 -0500</pubDate>
-      <guid>http://localhost:1313/career/howtowriteagreatresume/</guid>
-      <description>&lt;h1 id=&#34;the-art-of-the-resume-a-strategic-approach-to-standing-out&#34;&gt;The Art of the Resume: A Strategic Approach to Standing Out&lt;/h1&gt;
-&lt;p&gt;Writing a resume is often the most daunting part of a job search. It is not just a document; it is a marketing pitch. Through my own experiences and observations, I’ve realized that most resumes fail because they are too generic. They list tasks rather than achievements, and skills rather than mastery.&lt;/p&gt;
-&lt;p&gt;Here is a strategic framework for writing a resume that captures attention immediately—broken down into the Summary, Work Experience, and Skills.&lt;/p&gt;</description>
+      <guid>http://localhost:1314/career/howtowriteagreatresume/</guid>
+      <description>Elevate your resume with this strategic guide, focusing on crafting a powerful three-sentence summary, showcasing impact-driven achievements in your work experience, and curating a precise skill set to capture recruiters&amp;rsquo; attention and secure interviews.</description>
     </item>
   </channel>
 </rss>

@@ -2,73 +2,164 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Renren Zhang</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:1314/tags/</link>
     <description>Recent content in Tags on Renren Zhang</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Feb 2026 12:18:42 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Feb 2026 20:38:45 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1314/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Career</title>
-      <link>http://localhost:1313/tags/career/</link>
-      <pubDate>Wed, 11 Feb 2026 12:18:42 -0500</pubDate>
-      <guid>http://localhost:1313/tags/career/</guid>
+      <title>AI</title>
+      <link>http://localhost:1314/tags/ai/</link>
+      <pubDate>Fri, 20 Feb 2026 20:38:45 -0500</pubDate>
+      <guid>http://localhost:1314/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Engineering</title>
+      <link>http://localhost:1314/tags/engineering/</link>
+      <pubDate>Fri, 20 Feb 2026 20:38:45 -0500</pubDate>
+      <guid>http://localhost:1314/tags/engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCP</title>
+      <link>http://localhost:1314/tags/mcp/</link>
+      <pubDate>Fri, 20 Feb 2026 20:38:45 -0500</pubDate>
+      <guid>http://localhost:1314/tags/mcp/</guid>
       <description></description>
     </item>
     <item>
       <title>Open Source</title>
-      <link>http://localhost:1313/tags/open-source/</link>
+      <link>http://localhost:1314/tags/open-source/</link>
+      <pubDate>Fri, 20 Feb 2026 20:38:45 -0500</pubDate>
+      <guid>http://localhost:1314/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>http://localhost:1314/tags/productivity/</link>
+      <pubDate>Fri, 20 Feb 2026 20:38:45 -0500</pubDate>
+      <guid>http://localhost:1314/tags/productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agent</title>
+      <link>http://localhost:1314/tags/agent/</link>
+      <pubDate>Fri, 20 Feb 2026 02:13:42 -0500</pubDate>
+      <guid>http://localhost:1314/tags/agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Skill</title>
+      <link>http://localhost:1314/tags/skill/</link>
+      <pubDate>Fri, 20 Feb 2026 02:13:42 -0500</pubDate>
+      <guid>http://localhost:1314/tags/skill/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tech</title>
+      <link>http://localhost:1314/tags/tech/</link>
+      <pubDate>Fri, 20 Feb 2026 02:13:42 -0500</pubDate>
+      <guid>http://localhost:1314/tags/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tool</title>
+      <link>http://localhost:1314/tags/tool/</link>
+      <pubDate>Fri, 20 Feb 2026 02:13:42 -0500</pubDate>
+      <guid>http://localhost:1314/tags/tool/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory</title>
+      <link>http://localhost:1314/tags/memory/</link>
+      <pubDate>Wed, 18 Feb 2026 02:03:38 -0500</pubDate>
+      <guid>http://localhost:1314/tags/memory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IOS</title>
+      <link>http://localhost:1314/tags/ios/</link>
+      <pubDate>Sat, 14 Feb 2026 19:36:00 -0500</pubDate>
+      <guid>http://localhost:1314/tags/ios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile</title>
+      <link>http://localhost:1314/tags/mobile/</link>
+      <pubDate>Sat, 14 Feb 2026 19:36:00 -0500</pubDate>
+      <guid>http://localhost:1314/tags/mobile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vibe Coding</title>
+      <link>http://localhost:1314/tags/vibe-coding/</link>
+      <pubDate>Sat, 14 Feb 2026 19:36:00 -0500</pubDate>
+      <guid>http://localhost:1314/tags/vibe-coding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenClaw</title>
+      <link>http://localhost:1314/tags/openclaw/</link>
+      <pubDate>Fri, 13 Feb 2026 03:14:42 -0500</pubDate>
+      <guid>http://localhost:1314/tags/openclaw/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Career</title>
+      <link>http://localhost:1314/tags/career/</link>
       <pubDate>Wed, 11 Feb 2026 12:18:42 -0500</pubDate>
-      <guid>http://localhost:1313/tags/open-source/</guid>
+      <guid>http://localhost:1314/tags/career/</guid>
       <description></description>
     </item>
     <item>
       <title>安娜卡列尼娜</title>
-      <link>http://localhost:1313/tags/%E5%AE%89%E5%A8%9C%E5%8D%A1%E5%88%97%E5%B0%BC%E5%A8%9C/</link>
+      <link>http://localhost:1314/tags/%E5%AE%89%E5%A8%9C%E5%8D%A1%E5%88%97%E5%B0%BC%E5%A8%9C/</link>
       <pubDate>Mon, 09 Feb 2026 16:04:46 -0500</pubDate>
-      <guid>http://localhost:1313/tags/%E5%AE%89%E5%A8%9C%E5%8D%A1%E5%88%97%E5%B0%BC%E5%A8%9C/</guid>
+      <guid>http://localhost:1314/tags/%E5%AE%89%E5%A8%9C%E5%8D%A1%E5%88%97%E5%B0%BC%E5%A8%9C/</guid>
       <description></description>
     </item>
     <item>
       <title>社会评论</title>
-      <link>http://localhost:1313/tags/%E7%A4%BE%E4%BC%9A%E8%AF%84%E8%AE%BA/</link>
+      <link>http://localhost:1314/tags/%E7%A4%BE%E4%BC%9A%E8%AF%84%E8%AE%BA/</link>
       <pubDate>Mon, 09 Feb 2026 16:04:46 -0500</pubDate>
-      <guid>http://localhost:1313/tags/%E7%A4%BE%E4%BC%9A%E8%AF%84%E8%AE%BA/</guid>
+      <guid>http://localhost:1314/tags/%E7%A4%BE%E4%BC%9A%E8%AF%84%E8%AE%BA/</guid>
       <description></description>
     </item>
     <item>
       <title>人物描写</title>
-      <link>http://localhost:1313/tags/%E4%BA%BA%E7%89%A9%E6%8F%8F%E5%86%99/</link>
+      <link>http://localhost:1314/tags/%E4%BA%BA%E7%89%A9%E6%8F%8F%E5%86%99/</link>
       <pubDate>Mon, 09 Feb 2026 12:40:41 -0500</pubDate>
-      <guid>http://localhost:1313/tags/%E4%BA%BA%E7%89%A9%E6%8F%8F%E5%86%99/</guid>
+      <guid>http://localhost:1314/tags/%E4%BA%BA%E7%89%A9%E6%8F%8F%E5%86%99/</guid>
       <description></description>
     </item>
     <item>
       <title>Resume</title>
-      <link>http://localhost:1313/tags/resume/</link>
+      <link>http://localhost:1314/tags/resume/</link>
       <pubDate>Mon, 09 Feb 2026 00:17:43 -0500</pubDate>
-      <guid>http://localhost:1313/tags/resume/</guid>
+      <guid>http://localhost:1314/tags/resume/</guid>
       <description></description>
     </item>
     <item>
       <title>俄罗斯文学</title>
-      <link>http://localhost:1313/tags/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%87%E5%AD%A6/</link>
+      <link>http://localhost:1314/tags/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%87%E5%AD%A6/</link>
       <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%87%E5%AD%A6/</guid>
+      <guid>http://localhost:1314/tags/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%87%E5%AD%A6/</guid>
       <description></description>
     </item>
     <item>
       <title>托尔斯泰</title>
-      <link>http://localhost:1313/tags/%E6%89%98%E5%B0%94%E6%96%AF%E6%B3%B0/</link>
+      <link>http://localhost:1314/tags/%E6%89%98%E5%B0%94%E6%96%AF%E6%B3%B0/</link>
       <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E6%89%98%E5%B0%94%E6%96%AF%E6%B3%B0/</guid>
+      <guid>http://localhost:1314/tags/%E6%89%98%E5%B0%94%E6%96%AF%E6%B3%B0/</guid>
       <description></description>
     </item>
     <item>
       <title>读书笔记</title>
-      <link>http://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:1314/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:1314/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
   </channel>

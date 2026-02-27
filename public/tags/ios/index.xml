@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IOS on Renren Zhang</title>
+    <link>http://localhost:1314/tags/ios/</link>
+    <description>Recent content in IOS on Renren Zhang</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Feb 2026 19:36:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1314/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Built an iOS App MVP in 4 Hours: A Blueprint for AI-Driven Development</title>
+      <link>http://localhost:1314/tech/ios-vibecoding/</link>
+      <pubDate>Sat, 14 Feb 2026 19:36:00 -0500</pubDate>
+      <guid>http://localhost:1314/tech/ios-vibecoding/</guid>
+      <description>Outlines a disciplined, four-phase framework for rapidly building a production-ready iOS MVP using an AI assistant, emphasizing rigorous upfront system design, sequenced prompting, and a strict validation loop with atomic Git commits.</description>
+    </item>
+  </channel>
+</rss>
