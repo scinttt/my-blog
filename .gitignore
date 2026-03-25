@@ -1,4 +1,38 @@
+# Hugo build output
+public/
+server/
+resources/_gen/
+.hugo_build.lock
+hugo_stats.json
+
+# Environment & secrets
 .env
+.env.*
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# AI tools
 .aider*
 MEMORY.md
 AGENTS.md
+
+# Claude Code
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+/docs/
+NOW.md
+.now_md.cooldown
+.now_md.lock
