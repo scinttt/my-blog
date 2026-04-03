@@ -1,47 +1,17 @@
-baseURL = "https://www.creaturelove7.com/"  # 改成你的域名，如 "https://renrenzhang.com/"
-languageCode = "en"
+baseURL = "https://www.creaturelove7.com/"
 title = "Renren Zhang"
 theme = "PaperMod"
-
-# Menu
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 1
-
-[[menu.main]]
-  name = "Tech"
-  url = "/tech/"
-  weight = 2
-
-[[menu.main]]
-  name = "Career"
-  url = "/career/"
-  weight = 3
-
-[[menu.main]]
-  name = "AI"
-  url = "/ai/"
-  weight = 4
-
-[[menu.main]]
-  name = "Books"
-  url = "/books/"
-  weight = 5
-
-[[menu.main]]
-  name = "Money"
-  url = "/money/"
-  weight = 6
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 
 [params]
-  description = "Tech | Career | AI | Books | Money"
-  mainSections = ["ai", "books", "tech", "money", "career"]
   author = "Renren Zhang"
+  mainSections = ["ai", "books", "tech", "money", "career"]
   ShowReadingTime = true
   ShowCodeCopyButtons = true
   ShowBreadCrumbs = true
   defaultTheme = "auto"
+  displayFullLangName = true
 
   [params.assets]
     favicon = "favicon.svg"
@@ -58,3 +28,74 @@ theme = "PaperMod"
     codeFences = true
     lineNos = true
     style = "monokai"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-US"
+    weight = 1
+    [languages.en.params]
+      description = "Tech | Career | AI | Books | Money"
+    [[languages.en.menu.main]]
+      name = "Home"
+      pageRef = "/"
+      weight = 1
+    [[languages.en.menu.main]]
+      name = "Tech"
+      pageRef = "/tech"
+      weight = 2
+    [[languages.en.menu.main]]
+      name = "Career"
+      pageRef = "/career"
+      weight = 3
+    [[languages.en.menu.main]]
+      name = "AI"
+      pageRef = "/ai"
+      weight = 4
+    [[languages.en.menu.main]]
+      name = "Books"
+      pageRef = "/books"
+      weight = 5
+    [[languages.en.menu.main]]
+      name = "Money"
+      pageRef = "/money"
+      weight = 6
+    [[languages.en.menu.main]]
+      name = "Search"
+      pageRef = "/search"
+      weight = 7
+
+  [languages.zh]
+    languageName = "中文"
+    languageCode = "zh-CN"
+    weight = 2
+    [languages.zh.params]
+      description = "技术 | 职业 | AI | 读书 | 理财"
+    [[languages.zh.menu.main]]
+      name = "主页"
+      pageRef = "/"
+      weight = 1
+    [[languages.zh.menu.main]]
+      name = "技术"
+      pageRef = "/tech"
+      weight = 2
+    [[languages.zh.menu.main]]
+      name = "职业"
+      pageRef = "/career"
+      weight = 3
+    [[languages.zh.menu.main]]
+      name = "AI"
+      pageRef = "/ai"
+      weight = 4
+    [[languages.zh.menu.main]]
+      name = "读书"
+      pageRef = "/books"
+      weight = 5
+    [[languages.zh.menu.main]]
+      name = "理财"
+      pageRef = "/money"
+      weight = 6
+    [[languages.zh.menu.main]]
+      name = "搜索"
+      pageRef = "/search"
+      weight = 7

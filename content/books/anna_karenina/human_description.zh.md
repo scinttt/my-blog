@@ -3,7 +3,8 @@ date = '2026-02-09T12:40:41-05:00'
 title = '安娜卡列尼娜中的人物描写'
 summary = "A critical analysis of characterization in Tolstoy's 'Anna Karenina,' examining the nuanced descriptions of Stepan Arkadyich and Levin to reveal themes of social vanity, personal hypocrisy, and authentic human connection."
 categories = ["Books"]
-tags = ['安娜卡列尼娜', '人物描写']
+tags = ['Anna Karenina', 'Character Analysis']
+aliases = ["/books/anna_karenina/human_description/"]
 +++
 
 # 斯捷潘·阿尔卡季奇
