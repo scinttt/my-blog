@@ -29,6 +29,14 @@ defaultContentLanguageInSubdir = false
     lineNos = true
     style = "monokai"
 
+[related]
+  includeNewer = true
+  threshold = 50
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
 [languages]
   [languages.en]
     languageName = "English"
@@ -60,10 +68,6 @@ defaultContentLanguageInSubdir = false
       name = "Money"
       pageRef = "/money"
       weight = 6
-    [[languages.en.menu.main]]
-      name = "Search"
-      pageRef = "/search"
-      weight = 7
 
   [languages.zh]
     languageName = "中文"
@@ -95,7 +99,3 @@ defaultContentLanguageInSubdir = false
       name = "理财"
       pageRef = "/money"
       weight = 6
-    [[languages.zh.menu.main]]
-      name = "搜索"
-      pageRef = "/search"
-      weight = 7

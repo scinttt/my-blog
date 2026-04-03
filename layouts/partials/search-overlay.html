@@ -1,0 +1,148 @@
+<div id="search-overlay" class="search-overlay" role="dialog" aria-modal="true" aria-label="{{ i18n "search" | default "Search" }}" style="display:none;">
+  <div class="search-overlay-backdrop"></div>
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <input id="search-overlay-input" type="search" placeholder="{{ i18n "search_placeholder" | default "Search articles..." }}" autocomplete="off" aria-label="{{ i18n "search" | default "Search" }}">
+      <button id="search-overlay-close" aria-label="{{ i18n "search_close" | default "Close search" }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div id="search-overlay-results" class="search-overlay-results"></div>
+    <div id="search-overlay-empty" class="search-overlay-empty" style="display:none;">
+      {{ i18n "search_no_results" | default "No results found." }}
+    </div>
+  </div>
+</div>
+<script>
+(function() {
+  var SEARCH_JSON_URL = {{ with .Site.Home.OutputFormats.Get "json" }}"{{ .Permalink }}"{{ else }}""{{ end }};
+
+  var overlay = document.getElementById('search-overlay');
+  var input = document.getElementById('search-overlay-input');
+  var resultsEl = document.getElementById('search-overlay-results');
+  var emptyEl = document.getElementById('search-overlay-empty');
+  var closeBtn = document.getElementById('search-overlay-close');
+  var searchBtn = document.getElementById('search-toggle');
+  var fuse = null;
+  var fuseLoaded = false;
+  var fuseLoading = false;
+
+  function openOverlay() {
+    overlay.style.display = '';
+    document.body.style.overflow = 'hidden';
+    input.value = '';
+    resultsEl.textContent = '';
+    emptyEl.style.display = 'none';
+    input.focus();
+    if (!fuseLoaded && !fuseLoading) loadFuse();
+  }
+
+  function closeOverlay() {
+    overlay.style.display = 'none';
+    document.body.style.overflow = '';
+    if (searchBtn) searchBtn.focus();
+  }
+
+  function loadFuse() {
+    fuseLoading = true;
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js';
+    script.onload = function() {
+      fetch(SEARCH_JSON_URL)
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          fuse = new Fuse(data, {
+            distance: 100,
+            threshold: 0.4,
+            ignoreLocation: true,
+            keys: ['title', 'permalink', 'summary', 'content']
+          });
+          fuseLoaded = true;
+          fuseLoading = false;
+          if (input.value.trim()) doSearch(input.value.trim());
+        });
+    };
+    document.head.appendChild(script);
+  }
+
+  function doSearch(query) {
+    if (!fuse || !query) {
+      resultsEl.textContent = '';
+      emptyEl.style.display = 'none';
+      return;
+    }
+    var results = fuse.search(query, { limit: 10 });
+    if (results.length === 0) {
+      resultsEl.textContent = '';
+      emptyEl.style.display = '';
+      return;
+    }
+    emptyEl.style.display = 'none';
+    resultsEl.textContent = '';
+    for (var i = 0; i < results.length; i++) {
+      var item = results[i].item;
+      var a = document.createElement('a');
+      a.className = 'search-result-item';
+      a.href = item.permalink;
+
+      var titleSpan = document.createElement('span');
+      titleSpan.className = 'search-result-title';
+      titleSpan.textContent = item.title;
+      a.appendChild(titleSpan);
+
+      if (item.summary) {
+        var summarySpan = document.createElement('span');
+        summarySpan.className = 'search-result-summary';
+        summarySpan.textContent = item.summary.substring(0, 120);
+        a.appendChild(summarySpan);
+      }
+      resultsEl.appendChild(a);
+    }
+  }
+
+  if (searchBtn) searchBtn.addEventListener('click', openOverlay);
+  closeBtn.addEventListener('click', closeOverlay);
+  overlay.querySelector('.search-overlay-backdrop').addEventListener('click', closeOverlay);
+
+  input.addEventListener('input', function() {
+    doSearch(this.value.trim());
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === '/' && overlay.style.display === 'none') {
+      var tag = document.activeElement.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || document.activeElement.isContentEditable) return;
+      e.preventDefault();
+      openOverlay();
+      return;
+    }
+    if (e.key === 'Escape' && overlay.style.display !== 'none') {
+      closeOverlay();
+      return;
+    }
+    if (overlay.style.display === 'none') return;
+    var items = resultsEl.querySelectorAll('.search-result-item');
+    if (items.length === 0) return;
+    var focused = document.activeElement;
+    var idx = Array.prototype.indexOf.call(items, focused);
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (focused === input) {
+        items[0].focus();
+      } else if (idx >= 0 && idx < items.length - 1) {
+        items[idx + 1].focus();
+      }
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (idx === 0) {
+        input.focus();
+      } else if (idx > 0) {
+        items[idx - 1].focus();
+      }
+    }
+  });
+})();
+</script>

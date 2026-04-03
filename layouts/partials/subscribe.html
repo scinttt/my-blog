@@ -1,0 +1,13 @@
+<div class="subscribe-section">
+  <div class="subscribe-inner">
+    <h3>{{ i18n "subscribe_title" | default "Stay Updated" }}</h3>
+    <p>{{ i18n "subscribe_desc" | default "Get new posts delivered to your inbox." }}</p>
+    <form action="https://buttondown.com/api/emails/embed-subscribe/PLACEHOLDER" method="post" target="_blank">
+      <input type="hidden" name="embed" value="1">
+      <div class="subscribe-form">
+        <input type="email" name="email" placeholder="{{ i18n "subscribe_placeholder" | default "your@email.com" }}" required>
+        <button type="submit">{{ i18n "subscribe_button" | default "Subscribe" }}</button>
+      </div>
+    </form>
+  </div>
+</div>
