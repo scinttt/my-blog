@@ -9,6 +9,5 @@
       "HUGO_VERSION": "0.155.3",
       "GIT_LFS_SKIP_SMUDGE": "1"
     }
-  },
-  "installCommand": "git submodule update --init --recursive && echo 'Submodules updated'"
+  }
 }

@@ -1,14 +1,15 @@
+{{- $subscribeEndpoint := site.Params.subscribe.endpoint -}}
 <div class="subscribe-section">
   <div class="subscribe-inner">
     <h3>{{ i18n "subscribe_title" | default "Stay Updated" }}</h3>
     <p class="subscribe-desc">{{ i18n "subscribe_desc" | default "Get new posts delivered to your inbox." }}</p>
     <form class="subscribe-form-wrapper" onsubmit="return handleSubscribe(this)">
       <div class="subscribe-form">
-        <input type="email" name="email" placeholder="{{ i18n "subscribe_placeholder" | default "your@email.com" }}" required>
-        <button type="submit">{{ i18n "subscribe_button" | default "Subscribe" }}</button>
+        <input type="email" name="email" placeholder="{{ i18n "subscribe_placeholder" | default "your@email.com" }}" required{{ if not $subscribeEndpoint }} disabled{{ end }}>
+        <button type="submit"{{ if not $subscribeEndpoint }} disabled{{ end }}>{{ i18n "subscribe_button" | default "Subscribe" }}</button>
       </div>
     </form>
-    <p class="subscribe-msg" style="display:none;"></p>
+    <p class="subscribe-msg"{{ if $subscribeEndpoint }} style="display:none;"{{ end }}>{{ if not $subscribeEndpoint }}{{ i18n "subscribe_unavailable" | default "Email signup is not configured for this deployment." }}{{ end }}</p>
   </div>
 </div>
 <script>
@@ -17,18 +18,32 @@ function handleSubscribe(form) {
   var btn = form.querySelector('button');
   var msg = form.closest('.subscribe-inner').querySelector('.subscribe-msg');
   var desc = form.closest('.subscribe-inner').querySelector('.subscribe-desc');
+  var endpoint = {{ $subscribeEndpoint | jsonify }};
+  if (!endpoint) {
+    msg.style.display = '';
+    msg.textContent = '{{ i18n "subscribe_unavailable" | default "Email signup is not configured for this deployment." }}';
+    msg.style.color = '#e74c3c';
+    return false;
+  }
   btn.disabled = true;
   btn.textContent = '...';
-  fetch('https://buttondown.com/api/emails/embed-subscribe/scinttt', {
+  fetch(endpoint, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: 'email=' + encodeURIComponent(email) + '&embed=1',
-    mode: 'no-cors'
-  }).then(function() {
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email: email })
+  }).then(function(response) {
+    if (!response.ok) {
+      throw new Error('Subscribe request failed');
+    }
+    return response.json();
+  }).then(function(payload) {
+    if (!payload.ok) {
+      throw new Error(payload.error || 'Subscribe request failed');
+    }
     form.style.display = 'none';
     desc.style.display = 'none';
     msg.style.display = '';
-    msg.textContent = '{{ i18n "subscribe_success" | default "Thanks! Check your inbox to confirm." }}';
+    msg.textContent = '{{ i18n "subscribe_success" | default "You are subscribed." }}';
     msg.style.color = 'var(--primary)';
   }).catch(function() {
     btn.disabled = false;
