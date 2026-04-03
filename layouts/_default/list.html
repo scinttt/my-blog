@@ -51,11 +51,6 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
-{{/* Subscribe section on homepage, above article list */}}
-{{- if and .IsHome (eq $paginator.PageNumber 1) }}
-{{- partial "subscribe.html" . }}
-{{- end }}
-
 {{- $term := .Data.Term }}
 {{- range $index, $page := $paginator.Pages }}
 
