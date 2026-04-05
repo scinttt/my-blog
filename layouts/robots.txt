@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /search
+Disallow: /zh/search
+
+Sitemap: {{ "sitemap.xml" | absURL }}
+Sitemap: {{ "zh/sitemap.xml" | absURL }}

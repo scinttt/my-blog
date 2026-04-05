@@ -25,6 +25,8 @@ function handleSubscribe(form) {
     msg.style.color = '#e74c3c';
     return false;
   }
+  msg.style.display = 'none';
+  msg.textContent = '';
   btn.disabled = true;
   btn.textContent = '...';
   fetch(endpoint, {

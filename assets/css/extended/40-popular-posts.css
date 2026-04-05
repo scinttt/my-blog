@@ -16,6 +16,12 @@
   gap: 1rem;
 }
 
+@media (max-width: 600px) {
+  .popular-posts-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 .popular-posts .post-entry {
   border: 1px solid var(--border);
   border-radius: var(--radius);
