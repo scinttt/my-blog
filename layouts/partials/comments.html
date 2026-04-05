@@ -1,24 +1,15 @@
-{{- $giscus := site.Params.giscus -}}
-{{- if and $giscus.repo $giscus.repoid $giscus.categoryid -}}
+{{- $cusdis := site.Params.cusdis -}}
+{{- if $cusdis.appid -}}
 <div class="comments">
   <h3>{{ i18n "comments_title" | default "Comments" }}</h3>
-  <script
-    src="https://giscus.app/client.js"
-    data-repo="{{ $giscus.repo }}"
-    data-repo-id="{{ $giscus.repoid }}"
-    data-category="{{ $giscus.category }}"
-    data-category-id="{{ $giscus.categoryid }}"
-    data-mapping="{{ $giscus.mapping | default "pathname" }}"
-    data-strict="0"
-    data-reactions-enabled="{{ $giscus.reactionsenabled | default "1" }}"
-    data-emit-metadata="{{ $giscus.emitmetadata | default "0" }}"
-    data-input-position="{{ $giscus.inputposition | default "top" }}"
-    data-theme="preferred_color_scheme"
-    data-lang="{{ $giscus.lang | default "en" }}"
-    crossorigin="anonymous"
-    async>
-  </script>
+  <div id="cusdis_thread"
+    data-host="{{ $cusdis.host | default "https://cusdis.com" }}"
+    data-app-id="{{ $cusdis.appid }}"
+    data-page-id="{{ .Permalink }}"
+    data-page-url="{{ .Permalink }}"
+    data-page-title="{{ .Title }}"
+    data-theme="auto"
+  ></div>
+  <script async defer src="{{ $cusdis.host | default "https://cusdis.com" }}/js/cusdis.es.js"></script>
 </div>
-{{- else -}}
-<!-- Giscus not configured: fill in repo, repoID, category, categoryID in hugo.toml [params.giscus] -->
 {{- end -}}

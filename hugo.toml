@@ -28,6 +28,10 @@ defaultContentLanguageInSubdir = false
     inputPosition = "top"
     lang = "en"
 
+  [params.cusdis]
+    appId = "e2b52649-cf5d-45ba-a846-f523c1c049e3"
+    host = "https://cusdis.com"
+
   [params.assets]
     favicon = "favicon.svg"
     favicon16x16 = "favicon-16x16.png"
