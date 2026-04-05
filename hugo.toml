@@ -64,7 +64,7 @@ defaultContentLanguageInSubdir = false
     [languages.en.params]
       description = "Tech | Career | AI | Books"
     [[languages.en.menu.main]]
-      name = "Home"
+      name = "Latest"
       pageRef = "/"
       weight = 1
     [[languages.en.menu.main]]
@@ -90,7 +90,7 @@ defaultContentLanguageInSubdir = false
     [languages.zh.params]
       description = "技术 | 职业 | AI | 读书"
     [[languages.zh.menu.main]]
-      name = "主页"
+      name = "最新"
       pageRef = "/"
       weight = 1
     [[languages.zh.menu.main]]
