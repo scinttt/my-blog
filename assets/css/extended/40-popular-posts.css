@@ -43,3 +43,9 @@
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
+
+#cusdis_thread iframe {
+  width: 100% !important;
+  border: none !important;
+  min-height: 280px;
+}
