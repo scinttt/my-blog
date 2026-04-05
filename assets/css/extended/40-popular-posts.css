@@ -47,7 +47,7 @@
 #cusdis_thread iframe {
   width: 100% !important;
   height: auto !important;
-  min-height: 500px !important;
+  min-height: 350px !important;
   border: none !important;
   overflow: hidden !important;
 }
