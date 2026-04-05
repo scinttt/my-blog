@@ -12,22 +12,21 @@ defaultContentLanguageInSubdir = false
   ShowBreadCrumbs = true
   defaultTheme = "auto"
   displayFullLangName = true
+  comments = true
 
   [params.subscribe]
     endpoint = "https://email-beta-six.vercel.app/api/subscribe"
 
   [params.giscus]
-    repo = ""
-    repoID = ""
-    category = ""
-    categoryID = ""
+    repo = "scinttt/my-blog"
+    repoID = "R_kgDORLy8Qg"
+    category = "Announcements"
+    categoryID = "DIC_kwDORLy8Qs4C6FB1"
     mapping = "pathname"
     reactionsEnabled = "1"
     emitMetadata = "0"
     inputPosition = "top"
     lang = "en"
-
-  comments = true
 
   [params.assets]
     favicon = "favicon.svg"
