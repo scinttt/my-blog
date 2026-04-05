@@ -1,8 +1,8 @@
 +++
-date = '2026-04-05T00:45:00-04:00'
+date = '2026-04-05T00:30:00-04:00'
 draft = false
 title = 'Test Post: Delivery Check After Deploy Trigger'
-summary = "A fresh test article published after enabling deploy-triggered email delivery, used to verify that new post notifications arrive within minutes instead of waiting for the daily cron window."
+summary = "A fresh test article published after fixing the deploy-triggered email pipeline, used to verify that new post notifications arrive within minutes instead of waiting for the daily cron window."
 tags = ['Test', 'Newsletter', 'Tech']
 categories = ['tech']
 +++
