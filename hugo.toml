@@ -59,7 +59,7 @@ defaultContentLanguageInSubdir = false
     languageCode = "en-US"
     weight = 1
     [languages.en.params]
-      description = "Tech | Career | AI | Books | Money"
+      description = "Tech | Career | AI | Books"
     [[languages.en.menu.main]]
       name = "Home"
       pageRef = "/"
@@ -80,17 +80,12 @@ defaultContentLanguageInSubdir = false
       name = "Books"
       pageRef = "/books"
       weight = 5
-    [[languages.en.menu.main]]
-      name = "Money"
-      pageRef = "/money"
-      weight = 6
-
   [languages.zh]
     languageName = "中文"
     languageCode = "zh-CN"
     weight = 2
     [languages.zh.params]
-      description = "技术 | 职业 | AI | 读书 | 理财"
+      description = "技术 | 职业 | AI | 读书"
     [[languages.zh.menu.main]]
       name = "主页"
       pageRef = "/"
@@ -111,7 +106,3 @@ defaultContentLanguageInSubdir = false
       name = "读书"
       pageRef = "/books"
       weight = 5
-    [[languages.zh.menu.main]]
-      name = "理财"
-      pageRef = "/money"
-      weight = 6
