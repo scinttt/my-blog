@@ -68,7 +68,11 @@
                 {{- if (not site.Params.disableLangToggle) }}
                     {{- $lang := .Lang}}
                     {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                    {{- with site.Home.Translations }}
+                    {{- $translations := site.Home.AllTranslations }}
+                    {{- if and (not .IsHome) .IsTranslated }}
+                        {{- $translations = .AllTranslations }}
+                    {{- end }}
+                    {{- with $translations }}
                     <ul class="lang-switch">
                         {{- if $separator }}<li>|</li>{{ end }}
                         {{- range . -}}
