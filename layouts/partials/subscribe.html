@@ -18,7 +18,7 @@ function handleSubscribe(form) {
   var btn = form.querySelector('button');
   var msg = form.closest('.subscribe-inner').querySelector('.subscribe-msg');
   var desc = form.closest('.subscribe-inner').querySelector('.subscribe-desc');
-  var endpoint = {{ $subscribeEndpoint | jsonify }};
+  var endpoint = "{{ $subscribeEndpoint | safeJS }}";
   if (!endpoint) {
     msg.style.display = '';
     msg.textContent = '{{ i18n "subscribe_unavailable" | default "Email signup is not configured for this deployment." }}';
