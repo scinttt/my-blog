@@ -1,0 +1,58 @@
+name: Notify New Posts
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "content/**/*.en.md"
+
+concurrency:
+  group: notify-new-posts-production
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Collect changed English posts
+        id: changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          before_sha="${{ github.event.before }}"
+          if [[ "$before_sha" == "0000000000000000000000000000000000000000" ]]; then
+            git ls-files 'content/**/*.en.md' > changed_files.txt
+          else
+            git diff --name-only "$before_sha" "${{ github.sha }}" -- 'content/**/*.en.md' > changed_files.txt
+          fi
+
+          if [[ ! -s changed_files.txt ]]; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          cat changed_files.txt
+
+      - name: Trigger post email delivery
+        if: steps.changed.outputs.has_changes == 'true'
+        env:
+          BLOG_FEED_URL: https://www.creaturelove7.com/index.xml
+          EMAIL_SEND_API_URL: ${{ secrets.EMAIL_SEND_API_URL }}
+          EMAIL_SEND_API_TOKEN: ${{ secrets.EMAIL_SEND_API_TOKEN }}
+        run: |
+          test -n "$EMAIL_SEND_API_URL" || { echo "Missing required GitHub Actions secret: EMAIL_SEND_API_URL" >&2; exit 1; }
+          test -n "$EMAIL_SEND_API_TOKEN" || { echo "Missing required GitHub Actions secret: EMAIL_SEND_API_TOKEN" >&2; exit 1; }
+          python3 scripts/notify_new_posts.py $(cat changed_files.txt)

@@ -13,6 +13,7 @@ Current features:
 - Full-screen search overlay backed by Hugo JSON indexes
 - Related posts based on tags
 - Footer email subscribe form with an explicitly configured external API endpoint
+- Deploy-triggered post email delivery for newly changed English posts, with the external email service handling dedupe
 
 ## Repository Scope
 
@@ -51,6 +52,26 @@ Example subscribe endpoint configuration in `hugo.toml`:
 [params.subscribe]
   endpoint = "https://your-email-service.example.com/api/subscribe"
 ```
+
+## Post Email Delivery
+
+This repository triggers new post emails after `main` deployments.
+
+The workflow in `.github/workflows/notify-new-posts.yml` does the following:
+
+- Detects changed `content/**/*.en.md` files on pushes to `main`
+- Skips `draft = true`, `search.en.md`, and `_index.en.md`
+- Polls the production RSS feed until the new article is live
+- Calls the external email service `POST /api/send` endpoint with the exact post URL
+
+Required GitHub Actions secrets:
+
+- `EMAIL_SEND_API_URL`
+- `EMAIL_SEND_API_TOKEN`
+
+The email backend still keeps its cron job as a fallback path, but deployment-triggered delivery is the primary path for new post notifications.
+
+This repository intentionally does not hardcode a production `POST /api/send` endpoint in the workflow. Forks and open-source users must configure their own email service endpoint and token.
 
 ## Content Authoring
 
