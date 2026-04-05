@@ -14,7 +14,20 @@ defaultContentLanguageInSubdir = false
   displayFullLangName = true
 
   [params.subscribe]
-    endpoint = ""
+    endpoint = "https://email-beta-six.vercel.app/api/subscribe"
+
+  [params.giscus]
+    repo = ""
+    repoID = ""
+    category = ""
+    categoryID = ""
+    mapping = "pathname"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "top"
+    lang = "en"
+
+  comments = true
 
   [params.assets]
     favicon = "favicon.svg"
