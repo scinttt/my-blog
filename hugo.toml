@@ -1,11 +1,11 @@
 baseURL = "https://www.creaturelove7.com/"
-title = "Renren Zhang"
+title = "David Zhang"
 theme = "PaperMod"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
 [params]
-  author = "Renren Zhang"
+  author = "David Zhang"
   mainSections = ["ai", "books", "tech", "money", "career"]
   ShowReadingTime = true
   ShowCodeCopyButtons = true
