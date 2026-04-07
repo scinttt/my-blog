@@ -6,7 +6,7 @@ defaultContentLanguageInSubdir = false
 
 [params]
   author = "David Zhang"
-  mainSections = ["ai", "books", "tech", "money", "career"]
+  mainSections = ["ai", "books", "tech", "career"]
   ShowReadingTime = true
   ShowCodeCopyButtons = true
   ShowBreadCrumbs = true

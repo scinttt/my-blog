@@ -3,7 +3,7 @@ date = '2026-02-18T02:03:38-05:00'
 title = '如何让你的 Agent 像 OpenClaw 一样聪明'
 summary = "提供了一份为 AI 编程 Agent 实现持久化记忆系统的实操指南，主张采用简化的文件方案和手动 '/save' 命令来捕获会话上下文，以最小复杂度获取最大价值。"
 tags = ['Tech', 'AI', 'Agent', 'Open Source', 'Memory']
-popular = true
+popular = false
 +++
 
 *我从 OpenClaw 的记忆架构中学到了什么，以及我是如何在 OpenCode 中构建一个轻量版本的。*
